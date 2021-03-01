@@ -1,4 +1,4 @@
-# Google-Meet-Bot 🤖
+# Google-Meet-Spam-Bot 🤖
 Spam any google meet class
 
 <h3>Steps for use: </h3>
