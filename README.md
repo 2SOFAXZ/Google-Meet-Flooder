@@ -5,7 +5,8 @@ Spam any google meet class
 <ol style="margin-bottom:10px;">
 <li>Click <b>~</b> on the top left of your keyboard to set number of bots wanted</li><br>
 <li>Enter google meets link, the one you want spammed</li><br>
-<li>Confirm link and bot count</li><br>
+<li>Enter message that will keep getting spammed in chat from all bots. <span style="color:blue">(New Feature!)</span></li><br>
+<li>Confirm link, bot count, and spam msg.</li><br>
 <li>Bot your class, annoy your teacher, enjoy!</li><br>
 </ol>
 
@@ -14,6 +15,7 @@ Spam any google meet class
 <ul style="margin-bottom:10px;">
 <li>Please use a fake email address so you don't get caught 🤦‍♂️</li><br>
 <li>Please follow recommended max for bot count, or your browser may crash 💀</li><br>
+<li>Do not use chat spammer to spam offensive messages. 😒</li><br>
 <li><span style="color:red;">Don't</span> use on a strict teacher, I got suspended for using this on my ELA teacher 😭</span></li><br>
 <li>You can not hold me or greasyfork liable for your actions. This tool is for educational purposes only. <span style="color:red;"> You have been warned !! ⚠</span></li><br>
 </ul>
