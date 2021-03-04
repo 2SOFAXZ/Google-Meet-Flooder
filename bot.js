@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Google Meet Bot
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      2.0
 // @description  Spam any google meet class
 // @author       GSRHackZ
 // @match        *://*/*
@@ -14,29 +14,60 @@
 // @compatible               safari
 // ==/UserScript==
 
-
 if(location.href.includes("https://meet.google.com")){
-    document.body.addEventListener("keyup",function(evt){
-        if(evt.keyCode==192){
-            let botCount=prompt("How many bots would you like to activate? *Enter in number format only* Recommended : less than 15");
-            let link=prompt("Enter link bots should hijack; *Remember to use an email other than your school email!!*");
-            if(botCount>15){
-                let makeSure=confirm("Bot Count ("+botCount+") is too high. it may crash your computer, are you sure you would like to continue?")
-                if(makeSure!==1){
-                    alert("OK, Please try again.")
+    if(!location.href.includes("#BOT")){
+        document.body.addEventListener("keyup",function(evt){
+            if(evt.keyCode==192){
+                let botCount=prompt("How many bots would you like to activate? *Enter in number format only* Recommended : less than 15");
+                let link=prompt("Enter link bots should hijack; *Remember to use an email other than your school email!!*");
+                let phrase=prompt("What would you like the robot to keep spamming in chat?");
+                if(botCount.trim().length==0||link.trim().length==0||phrase.trim().length==0){
+                    alert("something is missing, please try again...🤔")
+                }
+                else{
+                    let ask=confirm(`Please confirm by clicking ok...\nbotCount = ${botCount}\nlink = ${link}\nSpam Msg = ${phrase}`);
+                    if(ask){
+                        localStorage.setItem("spamMsg",phrase);
+                        for(let i=0;i<botCount;i++){
+                            window.open(link+"#BOT"+Number(i+1));
+                        }
+                    }
+                    else{
+                        alert("alright, give it another go...😊")
+                    }
                 }
             }
-            if(botCount<=15){
-            let check=confirm("You have asked for "+botCount+" Bots and you want to Hijack this meeting: "+link+" Click ok to confirm and start hijack!!");
-            if(check==1){
-                for(let i=0;i<botCount;i++){
-                    window.open(link+"#BOT"+Number(i+1))
+
+        })}
+    else{
+        setInterval(function(){
+            if(document.getElementsByClassName("uArJ5e UQuaGc Y5sE8d uyXBBb xKiqt")[0]!==undefined){
+                document.getElementsByClassName("uArJ5e UQuaGc Y5sE8d uyXBBb xKiqt")[0].click();
+            }
+            if(document.getElementsByClassName("fwk7ze")[0]!==undefined){
+                if(document.getElementsByClassName("fwk7ze")[0].innerText.includes("refresh")){
+                    location.reload();
                 }
             }
-            else {
-                alert("Ok, Please try again.");
-            }}
-    }})
+            if(document.getElementsByClassName("CRFCdf")[0]!==undefined){
+                location.reload();
+            }
+            if(document.getElementsByClassName("uArJ5e UQuaGc Y5sE8d uyXBBb xKiqt")[0]!==undefined){
+                document.getElementsByClassName("uArJ5e UQuaGc Y5sE8d uyXBBb xKiqt")[0].click();
+            }
+
+            let phrase=localStorage.getItem("spamMsg");
+            botSay(phrase)
+        },1000)
+    }
+}
+
+function botSay(phrase){
+    document.getElementsByClassName("uArJ5e UQuaGc kCyAyd QU4Gid foXzLb ")[1].click();
+    document.getElementsByClassName("KHxj8b tL9Q4c")[0].value=phrase;
+    let send=document.getElementsByClassName("uArJ5e Y5FYJe cjq2Db IOMpW Cs0vCd RDPZE")[0];
+    send.setAttribute("aria-disabled",false);
+    send.click();
 }
 
 
