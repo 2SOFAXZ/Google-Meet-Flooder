@@ -3,7 +3,7 @@ Spam any google meet class
 
 <h3>Steps for use: </h3>
 <ol style="margin-bottom:10px;">
-<li>Open <a href="https://meet.google.com/">meet.google.com<</a> or any google meeting./li><br>
+<li>Open <a href="https://meet.google.com/">meet.google.com</a> or any google meeting.</li><br>
 <li>Click <b>Ctrl + Alt + B</b> to open up Bot Menu.</li><br>
 <li>Enter amount of bots you would like.</li><br>
 <li>Enter message that will keep getting spammed in chat from all bots. <span style="color:blue">(New Feature!)</span></li><br>
