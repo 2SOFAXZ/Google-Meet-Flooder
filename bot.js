@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Google Meet Spam Bot
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      3.1
 // @description  Spam any google meet with bots, chat spam added!!
 // @author       GSRHackZZ
 // @match        https://meet.google.com/*
@@ -34,8 +34,15 @@ window.addEventListener("keyup",function(evt){
                 if(dataSet.spam=="Active"){
                     spam=true;
                 }
+                let prm;
                 for(let i=0;i<dataSet.bots;i++){
-                    window.open(dataSet.link+`?botting=true&spam=${spam}&phrase=${dataSet.phrase}&#BOT_${i+1}`);
+                    if(dataSet.link.includes("?")){
+                        prm = "&botting"
+                    }
+                    else{
+                        prm = "?botting"
+                    }
+                    window.open(dataSet.link+`${prm}=true&spam=${spam}&phrase=${dataSet.phrase}&#BOT_${i+1}`);
                 }
             }
         }
