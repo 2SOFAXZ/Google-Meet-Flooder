@@ -1,0 +1,16 @@
+{
+   "name": "Google Meet Spam bot",
+  "version": "3.1",
+  "manifest_version": 1,
+  "description": "Flood any class or meeting with as many chat spamming bots as you desire 😈",
+  "homepage_url": "https://github.com/GSRHackZ/Google-Meet-Spam-Bot",
+
+    "content_scripts": [
+    {
+      "matches": ["https://meet.google.com/*"],
+      "js": ["Google-Meet-Spam-Bot/bot.js"]
+      
+    }
+  ]
+
+}
