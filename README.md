@@ -1,5 +1,5 @@
 # Google-Meet-Spam-Bot 🤖
-Spam any google meet class
+Flood any class or meeting with as many chat spamming bots as you desire 😈
 
 <h3>Steps for use: </h3>
 <ol style="margin-bottom:10px;">
