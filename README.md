@@ -3,23 +3,26 @@ Flood any class or meeting with as many chat spamming bots as you desire 😈
 
 <h3>Steps for use: </h3>
 <ol style="margin-bottom:10px;">
-<li>Join google meeting you want to spam. </li><br>
-<li>Click <b>Ctrl + Alt + B</b> to open up Bot Menu.</li><br>
-<li>Enter amount of bots you would like.</li><br>
-<li>Enter message that will keep getting spammed in chat from all bots. <span style="color:blue">(New Feature!)</span></li><br>
-<li>Confirm link, bot count, and spam msg.</li><br>
-<li>Bot your class, annoy your teacher, enjoy!</li><br>
+  <li>Install this script using the steps below.</li><br>
+  <li>Go to <a href="https://gsrhackz.github.io/Google-Meet-Flooder-Tool/">Google-Meet-Flooder-Tool</a>.</li><br>
+  <li>Enjoy!</li><br>
 </ol>
 
 
 <h3>Key points:</h3>
 <ul style="margin-bottom:10px;">
-<li>Please use a fake email address so you don't get caught 🤦‍♂️</li><br>
-<li>Please follow recommended max for bot count, or your browser may crash 💀</li><br>
-<li>Do not use chat spammer to spam offensive messages. 😒</li><br>
-<li><span style="color:red;">Don't</span> use on a strict teacher, I got suspended for using this on my ELA teacher 😭</span></li><br>
-<li>You can not hold me or greasyfork liable for your actions. This tool is for educational purposes only. <span style="color:red;"> You have been warned !! ⚠</span></li><br>
+  <li>This script doesn't work by itself. It executes code sent by <a href="https://gsrhackz.github.io/Google-Meet-Flooder-Tool/">Google-Meet-Flooder-Tool</a>.</li><br>
+  <li>All you have to do is install this script and then go use the website. Dont change anything in the code!</li><br>
 </ul>
+
+<h3>Steps for installing this script: </h3>
+<ol style="margin-bottom:10px;">
+<li>Install Tampermonkey, a userscript runner and manager. <a target="_Blank"
+        href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en"
+        style="text-decoration: none;color: rgb(0, 140, 255)">Tampermonkey</a> </li><br>
+  <li>Go to here and install the executor. <a href="https://greasyfork.org/en/scripts/421865-google-meet-spam-bot">Google-meet-Flooder</a></li><br>
+<li>That's it, done 🙌</li><br>
+</ol>
 
 <h3>Please consider:</h3>
 <ul>
