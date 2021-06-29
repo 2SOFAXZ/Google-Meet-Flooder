@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Google Meet Spam Bot
 // @namespace    http://tampermonkey.net/
-// @version      3.1
+// @version      4.0
 // @description  Spam any google meet with bots, chat spam added!!
 // @author       GSRHackZZ
 // @match        https://meet.google.com/*
@@ -23,9 +23,11 @@ if(urlParams.get("botting")=="true"){
 
 function botSay(phrase,wait){
     setInterval(function(){
-        document.getElementsByClassName("uArJ5e UQuaGc kCyAyd QU4Gid foXzLb ")[1].click();
-        document.getElementsByClassName("KHxj8b tL9Q4c")[0].value=phrase;
-        let send=document.getElementsByClassName("uArJ5e Y5FYJe cjq2Db IOMpW Cs0vCd RDPZE")[0];
+        if(document.getElementsByClassName("VfPpkd-Bz112c-LgbsSe yHy1rc eT1oJ JsuyRc boDUxc")[2].ariaPressed!=="true"){
+            document.getElementsByClassName("VfPpkd-Bz112c-LgbsSe yHy1rc eT1oJ JsuyRc boDUxc")[2].click()
+        }
+        document.getElementsByClassName("Pc9Gce Wic03c")[0].children[0].value=phrase;
+        let send=document.getElementsByClassName("uArJ5e Y5FYJe cjq2Db IOMpW Cs0vCd")[0];
         send.setAttribute("aria-disabled",false);
         send.click();
     },wait)
