@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Google Meet Spam Bot
 // @namespace    http://tampermonkey.net/
-// @version      4.0
+// @version      4.1
 // @description  Spam any google meet with bots, chat spam added!!
 // @author       GSRHackZZ
 // @match        https://meet.google.com/*
@@ -27,8 +27,8 @@ function botSay(phrase,wait){
             document.getElementsByClassName("VfPpkd-Bz112c-LgbsSe yHy1rc eT1oJ JsuyRc boDUxc")[2].click()
         }
         document.getElementsByClassName("Pc9Gce Wic03c")[0].children[0].value=phrase;
-        let send=document.getElementsByClassName("uArJ5e Y5FYJe cjq2Db IOMpW Cs0vCd")[0];
-        send.setAttribute("aria-disabled",false);
+        let send=document.getElementsByClassName("VfPpkd-Bz112c-LgbsSe yHy1rc eT1oJ tWDL4c Cs0vCd")[0];
+        send.removeAttribute("disabled");
         send.click();
     },wait)
 }
