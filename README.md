@@ -1,4 +1,4 @@
-# Google-Meet-Spam-Bot 🤖
+# Google-Meet-Spam-Bot
 Flood any class or meeting with as many chat spamming bots as you desire 😈
 <h4>⭐ Now works with updated google meets! ⭐</h4>
 
